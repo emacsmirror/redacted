@@ -18,5 +18,5 @@ jobs:
     - name: Run
       env:
         LOCAL_REPO: ${{ github.workspace }}
-        RECIPE: (secret-mode :repo "bkaestner/secret-mode.el" :fetcher github)
+        RECIPE: (redacted :repo "bkaestner/redacted.el" :fetcher github)
       run: echo $GITHUB_REF && make -C ~/melpazoid
